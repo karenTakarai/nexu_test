@@ -6,15 +6,19 @@ Para este programa y para ejecutarlo, es necesario:
 
 1. Clonar el repositorio.
 2. Crear la base de datos y las tablas usando el archivo `nexu_brands.sql`. (Usé XAMPP porque no tengo MySQL en mi computadora personal).
- En Mysql:
+3. En Mysql:
    ```
    CREATE DATABASE nexu_brands;
    
- despues en la terminal:
+4. despues en la terminal:
    ```
-   mysql -u root -p nexu_brands < C:\ruta\del\nexu_brands.sql
+    mysql -u root -p nexu_brands < C:\ruta\del\nexu_brands.sql
+   
+ 
+   ```
+   
 
-3. Una vez creada la base de datos, vamos a poblarla. El dump que les proporciono ya agregará toda la información, pero si desean probar el script, pueden truncar las tablas y luego deben ejecutar el archivo `populate_db.js` con Node.js:
+5. Una vez creada la base de datos, vamos a poblarla. El dump que les proporciono ya agregará toda la información, pero si desean probar el script, pueden truncar las tablas y luego deben ejecutar el archivo `populate_db.js` con Node.js:
 
    ```sql
    node populate_db.js
@@ -28,7 +32,7 @@ Para este programa y para ejecutarlo, es necesario:
    node server.js
 
 
-5. Usar Postman o abrir el navegador para empezar a probar los endpoints (yo usé el navegador con la función `fetch()` de JavaScript en la consola).
+6. Usar Postman o abrir el navegador para empezar a probar los endpoints (yo usé el navegador con la función `fetch()` de JavaScript en la consola).
 
    - **Usar GET para traer todas las brands**:
      localhost:3000/brands
@@ -58,7 +62,7 @@ Para este programa y para ejecutarlo, es necesario:
      localhost:3000/models?greater=[lowerlimit]&lower=[higherlimit]
      Reemplazar `[lowerlimit]` con el límite inferior y `[higherlimit]` con el límite superior.
 
-6. En la base de datos podrán ver un par de ejemplos que agregué, y también instalé ESLint para que puedan revisar el código. Para ello, solo ejecuten:
+7. En la base de datos podrán ver un par de ejemplos que agregué, y también instalé ESLint para que puedan revisar el código. Para ello, solo ejecuten:
 
    ```sh
    npx eslint .
