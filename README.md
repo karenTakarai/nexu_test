@@ -12,8 +12,7 @@ Para este programa y para ejecutarlo, es necesario:
       CREATE DATABASE nexu_brands;
 
 2.5 Después, en la terminal:
-
-      ```sh
+   ```
       mysql -u root -p nexu_brands < C:\ruta\del\nexu_brands.sql
 
 
