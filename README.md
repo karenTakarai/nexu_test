@@ -47,15 +47,15 @@ Para este programa y para ejecutarlo, es necesario:
 
    - **Usar POST para agregar un nuevo modelo**:
      localhost:3000/brands/:id/models
-     En el cuerpo del request, agregar un objeto con la propiedad `model_name` y opcionalmente `average_price`.  
-     Reemplazar `:id` con el ID de la brand a la que se le agregará el modelo.  
-     
-     Si se especifica un `average_price` menor a $100,000, el registro se guardará con `0` en la base de datos para ese campo.  
+     En el cuerpo del request, agregar un objeto con la propiedad `model_name` y opcionalmente `average_price`.
+     Reemplazar `:id` con el ID de la brand a la que se le agregará el modelo.
+
+     Si se especifica un `average_price` menor a $100,000, el registro se guardará con `0` en la base de datos para ese campo.
      Obsérvese que no hay valores nulos en ese campo, solo `0`. Supuse que así es como debe funcionar el programa.
 
    - **Usar PUT para actualizar el `average_price` de un modelo**:
      localhost:3000/models/:id
-     En el cuerpo del request, agregar un objeto con la propiedad `average_price`.  
+     En el cuerpo del request, agregar un objeto con la propiedad `average_price`.
      Reemplazar `:id` con el ID del modelo al que se le editará el valor.
 
    - **Usar GET para traer la lista de modelos en un rango de precios**:
