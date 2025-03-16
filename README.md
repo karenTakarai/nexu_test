@@ -7,14 +7,13 @@ Para este programa y para ejecutarlo, es necesario:
 1. Clonar el repositorio.
 2. Crear la base de datos y las tablas usando el archivo `nexu_brands.sql`. (Usé XAMPP porque no tengo MySQL en mi computadora personal).
 
-   En MySQL:
+   a) En MySQL:
       ```sql
       CREATE DATABASE nexu_brands;
 
-2.5 Después, en la terminal:
-   ```
-   mysql -u root -p nexu_brands < C:\ruta\del\nexu_brands.sql
-
+   b) Después, en la terminal:
+      ```sh
+      mysql -u root -p nexu_brands < C:\ruta\del\nexu_brands.sql
 
 3. Una vez creada la base de datos, vamos a poblarla. El dump que les proporciono ya agregará toda la información, pero si desean probar el script, pueden truncar las tablas y luego deben ejecutar el archivo `populate_db.js` con Node.js:
 
