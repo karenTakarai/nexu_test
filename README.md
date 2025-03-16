@@ -12,18 +12,24 @@ Para este programa y para ejecutarlo, es necesario:
    CREATE DATABASE nexu_brands;
 
 Después, en la terminal:
-   ```shell
+
+   ```sh
    mysql -u root -p nexu_brands < C:\ruta\del\nexu_brands.sql
 
+
 3. Una vez creada la base de datos, vamos a poblarla. El dump que les proporciono ya agregará toda la información, pero si desean probar el script, pueden truncar las tablas y luego deben ejecutar el archivo `populate_db.js` con Node.js:
+
    ```sql
    node populate_db.js
+
 
 **Nota:** El archivo JSON que compartieron en su repositorio tiene un "brand" con un modelo duplicado. Considero que, a menos que se especifique, no se deben omitir los duplicados automáticamente durante la ejecución del programa. En una situación real, esto podría causar la pérdida de información importante, por lo que debería investigarse primero la causa del duplicado. No agregué ninguna funcionalidad para omitir duplicados; solo removí el registro del archivo. Si usan el `models.json` que proporciono en este repositorio, no tendrán problema. Sin embargo, si usan el de ustedes, saltará un error por duplicado con su respectivo mensaje.
 
 4. Correr el archivo `server.js` con Node.js, y ya tendremos nuestro programa escuchando:
+
    ```js
    node server.js
+
 
 5. Usar Postman o abrir el navegador para empezar a probar los endpoints (yo usé el navegador con la función `fetch()` de JavaScript en la consola).
 
@@ -56,5 +62,6 @@ Después, en la terminal:
      Reemplazar `[lowerlimit]` con el límite inferior y `[higherlimit]` con el límite superior.
 
 6. En la base de datos podrán ver un par de ejemplos que agregué, y también instalé ESLint para que puedan revisar el código. Para ello, solo ejecuten:
-   ```shell
+
+   ```sh
    npx eslint .
