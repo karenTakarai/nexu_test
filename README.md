@@ -13,7 +13,7 @@ Para este programa y para ejecutarlo, es necesario:
 
 2.5 Después, en la terminal:
    ```
-      mysql -u root -p nexu_brands < C:\ruta\del\nexu_brands.sql
+   mysql -u root -p nexu_brands < C:\ruta\del\nexu_brands.sql
 
 
 3. Una vez creada la base de datos, vamos a poblarla. El dump que les proporciono ya agregará toda la información, pero si desean probar el script, pueden truncar las tablas y luego deben ejecutar el archivo `populate_db.js` con Node.js:
