@@ -9,7 +9,7 @@ Para este programa y para ejecutarlo, es necesario:
 
    En MySQL:
       ```sql
-      CREATE DATABASE nexu_brands```;
+      CREATE DATABASE nexu_brands´´´;
 
    Después, en la terminal:
 
