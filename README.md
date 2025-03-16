@@ -11,7 +11,8 @@ Para este programa y para ejecutarlo, es necesario:
    ```sql
    CREATE DATABASE nexu_brands;
 
-   Después, en la terminal:
+Después, en la terminal:
+
    ```shell
    mysql -u root -p nexu_brands < C:\ruta\del\nexu_brands.sql
 
@@ -19,7 +20,7 @@ Para este programa y para ejecutarlo, es necesario:
    ```sql
    node populate_db.js
 
-   **Nota:** El archivo JSON que compartieron en su repositorio tiene un "brand" con un modelo duplicado. Considero que, a menos que se especifique, no se deben omitir los duplicados automáticamente durante la ejecución del programa. En una situación real, esto podría causar la pérdida de información importante, por lo que debería investigarse primero la causa del duplicado. No agregué ninguna funcionalidad para omitir duplicados; solo removí el registro del archivo. Si usan el `models.json` que proporciono en este repositorio, no tendrán problema. Sin embargo, si usan el de ustedes, saltará un error por duplicado con su respectivo mensaje.
+**Nota:** El archivo JSON que compartieron en su repositorio tiene un "brand" con un modelo duplicado. Considero que, a menos que se especifique, no se deben omitir los duplicados automáticamente durante la ejecución del programa. En una situación real, esto podría causar la pérdida de información importante, por lo que debería investigarse primero la causa del duplicado. No agregué ninguna funcionalidad para omitir duplicados; solo removí el registro del archivo. Si usan el `models.json` que proporciono en este repositorio, no tendrán problema. Sin embargo, si usan el de ustedes, saltará un error por duplicado con su respectivo mensaje.
 
 4. Correr el archivo `server.js` con Node.js, y ya tendremos nuestro programa escuchando:
    ```js
